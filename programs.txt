@@ -1,0 +1,168 @@
+https://docs.google.com/document/d/14J5-zcQjXSNunyUqrXZz50skGX_XxB3IE0b_ilK-Pw4/edit#
+
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+var myName = userInput[0];
+console.log(myName);
+myName = "My name is " + myName;
+console.log(myName);
+});
+
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+var num = parseInt(userInput[0]);
+console.log(num);
+num = 10 + num;
+console.log(num);
+});
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+var sum = parseInt(userInput[0]) + parseInt(userInput[1]) + parseInt(userInput[2]);
+console.log(sum);
+});
+
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+console.log(userInput);
+var dummy = userInput[0].split(" ");
+console.log(dummy);
+var sum = parseInt(dummy[0]) + parseInt(dummy[1]) + parseInt(dummy[2]);
+console.log(sum);
+});
+
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+console.log(userInput);
+var dummy = userInput[0].split(" ");
+console.log(dummy);
+var sum = parseInt(dummy[0]) + parseInt(dummy[1]) + parseInt(dummy[2]);
+
+var dummy1= userInput[1].split(" ");
+console.log(dummy1);
+var sum1 = parseInt(dummy1[0]) + parseInt(dummy1[1]) + parseInt(dummy1[2]);
+
+var dummy2 = userInput[2].split(" ");
+console.log(dummy2);
+var sum2 = parseInt(dummy2[0]) + parseInt(dummy2[1]) + parseInt(dummy2[2]);
+var total = sum + sum1 + sum2;
+console.log(total);
+});
+
+
+
+Day 2:
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+
+inp.on("close", () => {
+
+for (var i=0; i<10; i++)
+{
+    
+console.log("Hi");
+}
+});
+
+
+var userInput = ['1 2 3', '4 5 6', '7 8 9'];
+
+console.log(userInput);
+
+var sum=0;
+
+for (var i=0; i<userInput.length; i++)
+
+{
+    
+var dummy = userInput[i].split(" ");
+    
+console.log(dummy);
+    
+for (var j=0; j<dummy.length; j++)
+    
+{
+        
+sum = sum + parseInt(dummy[j]);
+    
+}
+
+}
+
+console.log(sum);
+
+
+Date: 6th March
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = []
+
+inp.on("line", (data) => {
+  userInput.push(data)
+});
+
+
+inp.on("close",() => {
+    var num= 10;
+    console.log("parseInt", parseInt(userInput[0]) + num);
+    console.log("parseFloat",parseFloat(userInput[0]) + num);
+    console.log("+",+userInput[0]+num);
+    console.log("Number", Number(userInput[0]) +num);
+    console.log(userInput[0], typeof userInput[0]);
+})
